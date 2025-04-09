@@ -1,2 +1,7 @@
-# task-5-fullstack
-Virtual Internship Experience (Investree) - Fullstack - Nabilah Fayza Amani
+
+# Laravel Blog UI
+
+Project ini dibuat untuk menyelesaikan tugas:
+
+**Virtual Internship Experience (Investree)**
+**Fullstack Developer - Nabilah Fayza Amani**

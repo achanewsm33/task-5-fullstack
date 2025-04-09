@@ -3,27 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory; // ← WAJIB
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
 class Category extends Model
 {
-    use HasFactory; // ← INI YANG BELUM ADA
+    use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'user_id',
-    ];
-
-    // Relasi ke Post
-    public function posts()
+    public function articles()
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Article::class);
     }
 
-    // Relasi ke User
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+    protected $fillable = ['name']; // ✅ tambahkan ini
+
 }

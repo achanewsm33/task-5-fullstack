@@ -6,7 +6,6 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Category;
 
-
 class CategorySeeder extends Seeder
 {
     /**
@@ -14,6 +13,10 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::factory(5)->create();
+        $categories = ['Laravel', 'PHP', 'Web Dev', 'Tips & Tricks'];
+
+        foreach ($categories as $name) {
+            Category::create(['name' => $name]);
+        }
     }
 }

@@ -6,13 +6,6 @@
       0 => 'Laravel\\Pail\\PailServiceProvider',
     ),
   ),
-  'laravel/passport' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Passport\\PassportServiceProvider',
-    ),
-  ),
   'laravel/sail' => 
   array (
     'providers' => 
@@ -25,6 +18,13 @@
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'laravel/ui' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Ui\\UiServiceProvider',
     ),
   ),
   'nesbot/carbon' => 

@@ -3,9 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Laravel\Passport\Console\InstallCommand;
-use Laravel\Passport\Passport; // <--- Tambahkan baris ini
-
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,11 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                InstallCommand::class,
-            ]);
-        }
+        //
     }
 
     /**
@@ -26,6 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Passport::ignoreMigrations();
+        //
     }
 }
